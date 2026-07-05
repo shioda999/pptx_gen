@@ -38,6 +38,65 @@ Health check:
 curl http://127.0.0.1:8000/health
 ```
 
+## Agent-Friendly CLI
+
+The CLI runs the same core services without starting FastAPI. Run it from
+`ppt-agent/backend` so Python can import `app`.
+
+Create a deck:
+
+```powershell
+python -m app.cli create `
+  --markdown-file ..\examples\gpu-cluster-architecture.md `
+  --output gpu-cluster.pptx
+```
+
+Create from a local template:
+
+```powershell
+python -m app.cli create `
+  --markdown-file ..\examples\codex-self-intro.md `
+  --template-path templates\local-template.pptx `
+  --output template-based.pptx
+```
+
+Validate Markdown and/or PPTX:
+
+```powershell
+python -m app.cli validate --markdown-file ..\examples\table.md
+python -m app.cli validate --pptx-path outputs\gpu-cluster.pptx
+```
+
+Inspect editable shapes:
+
+```powershell
+python -m app.cli inspect --pptx-path outputs\gpu-cluster.pptx
+```
+
+Update named shapes in an existing deck:
+
+```powershell
+python -m app.cli update `
+  --pptx-path outputs\gpu-cluster.pptx `
+  --output gpu-cluster-edited.pptx `
+  --slide-index 0 `
+  --set "title=GPUクラスタ構成と運用設計" `
+  --set "body=クラスタの見方`n  - GPU node / network / storageを一体で見る"
+```
+
+For larger updates, pass a JSON object:
+
+```powershell
+python -m app.cli update `
+  --pptx-path outputs\gpu-cluster.pptx `
+  --output gpu-cluster-edited.pptx `
+  --slide-key gpu-cluster-overview-1 `
+  --payload-file update-payload.json
+```
+
+All CLI commands print JSON to stdout and errors as JSON to stderr. This keeps
+the interface easy for agents and future MCP wrappers to consume.
+
 ## Create A Deck
 
 ```bash
