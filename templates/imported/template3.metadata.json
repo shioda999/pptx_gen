@@ -1,0 +1,98 @@
+{
+  "template": "template3.pptx",
+  "version": 1,
+  "categories": ["title", "agenda", "section", "content"],
+  "slides": [
+    {
+      "index": 0,
+      "category": "title",
+      "variant": "cover",
+      "layout": "タイトルのみ",
+      "notes": "Cover/title slide"
+    },
+    {
+      "index": 1,
+      "category": "agenda",
+      "variant": "diagram",
+      "layout": "コンテンツ 2",
+      "notes": "Agenda or overview slide"
+    },
+    {
+      "index": 2,
+      "category": "content",
+      "variant": "image",
+      "layout": "タイトル + 画像",
+      "notes": "Image-heavy content slide"
+    },
+    {
+      "index": 3,
+      "category": "section",
+      "variant": "summary",
+      "layout": "タイトル + サブタイトル + 画像",
+      "notes": "Section or subtitle slide"
+    },
+    {
+      "index": 4,
+      "category": "content",
+      "variant": "text",
+      "layout": "コンテンツ 1",
+      "notes": "General content slide"
+    },
+    {
+      "index": 5,
+      "category": "section",
+      "variant": "summary",
+      "layout": "タイトル + サブタイトル",
+      "notes": "Section break without image"
+    },
+    {
+      "index": 6,
+      "category": "content",
+      "variant": "two_column",
+      "layout": "2 段組 1",
+      "notes": "Two-column content slide"
+    },
+    {
+      "index": 7,
+      "category": "content",
+      "variant": "two_column",
+      "layout": "2 段組 2",
+      "notes": "Two-column content slide"
+    },
+    {
+      "index": 8,
+      "category": "content",
+      "variant": "image",
+      "layout": "コンテンツ + 画像 ",
+      "notes": "Content plus image slide"
+    },
+    {
+      "index": 9,
+      "category": "content",
+      "variant": "table",
+      "layout": "コンテンツ + 表",
+      "notes": "Content plus table slide"
+    },
+    {
+      "index": 10,
+      "category": "content",
+      "variant": "two_column",
+      "layout": "2 段組 3",
+      "notes": "Two-column content slide"
+    },
+    {
+      "index": 11,
+      "category": "content",
+      "variant": "table",
+      "layout": "表",
+      "notes": "Table-heavy content slide"
+    },
+    {
+      "index": 12,
+      "category": "content",
+      "variant": "text",
+      "layout": "コンテンツ 3",
+      "notes": "General content slide"
+    }
+  ]
+}

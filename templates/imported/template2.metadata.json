@@ -1,0 +1,35 @@
+{
+  "template": "template2.pptx",
+  "version": 1,
+  "categories": ["title", "agenda", "section", "content"],
+  "slides": [
+    {
+      "index": 0,
+      "category": "title",
+      "variant": "cover",
+      "layout": "タイトル スライド",
+      "notes": "Cover/title slide"
+    },
+    {
+      "index": 1,
+      "category": "agenda",
+      "variant": "diagram",
+      "layout": "タイトルとコンテンツ",
+      "notes": "Use as agenda or overview slide"
+    },
+    {
+      "index": 2,
+      "category": "content",
+      "variant": "table",
+      "layout": "タイトルとコンテンツ",
+      "notes": "General content slide"
+    },
+    {
+      "index": 3,
+      "category": "section",
+      "variant": "summary",
+      "layout": "名刺",
+      "notes": "Closing, profile, or section-style slide"
+    }
+  ]
+}

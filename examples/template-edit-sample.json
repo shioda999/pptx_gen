@@ -1,0 +1,9 @@
+{
+  "pptx_path": "templates/proposal-template.pptx",
+  "slide_key": "architecture-overview",
+  "shape_name": "table_area",
+  "payload": {
+    "headers": ["項目", "内容"],
+    "rows": [["GPU", "H100"], ["推論基盤", "vLLM"]]
+  }
+}
